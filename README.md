@@ -78,3 +78,12 @@ Para executar todos os testes API  e, em seguida, gerar o relatório HTML:
 npx playwright test
 
 npx playwright show-report
+
+***Caso acontece erro***
+Erro: Error: listen EADDRINUSE: address already in use ::1:9323
+*Para corrigir o erro*
+**Verificar o bloqueio da porta* 
+Comando-1: netstat -ano | findstr :9323 
+***Trocar o <PID> pelo LISTENING***
+Comando-2: taskkill /PID <PID> /F
+
