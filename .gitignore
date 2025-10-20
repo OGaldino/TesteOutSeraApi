@@ -1,0 +1,9 @@
+# Ignore build artifacts
+test-results/
+*.log
+*.tmp
+*.temp
+*.txt
+*.json
+*.zip
+node_modules
